@@ -1,10 +1,12 @@
-import '../api/apiservice.dart';
-import '../model/restaurant_model.dart';
+import 'dart:convert';
+import 'dart:io';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
-import 'dart:convert';
-import 'dart:io';
+
+import '../api/apiservice.dart';
+import '../model/restaurant_model.dart';
 
 enum ResultState { loading, noData, hasData, error, noConnection }
 

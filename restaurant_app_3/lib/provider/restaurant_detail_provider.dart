@@ -1,9 +1,11 @@
+import 'dart:convert';
+import 'dart:io';
+
+import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+
 import '../api/apiservice.dart';
 import '../model/restaurant_detail_model.dart';
-import 'package:flutter/material.dart';
-import 'dart:convert';
-import 'package:http/http.dart' as http;
-import 'dart:io';
 
 enum ResultState { loading, noData, hasData, error, noConnection }
 

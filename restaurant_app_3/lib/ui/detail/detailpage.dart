@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../../provider/restaurant_detail_provider.dart';
+
 import './detail_item.dart';
+import '../../provider/restaurant_detail_provider.dart';
 
 class DetailPage extends StatefulWidget {
   static const route = '/detail_page';

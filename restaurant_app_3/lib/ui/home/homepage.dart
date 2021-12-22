@@ -4,6 +4,7 @@ import 'package:restaurant_app_2/menu/items.dart';
 import 'package:restaurant_app_2/menu/menu_item.dart';
 import 'package:restaurant_app_2/provider/restaurant_provider.dart';
 import 'package:restaurant_app_2/ui/setting/setting_page.dart';
+
 import '../favorite/favorite_page.dart';
 import '../home/restaurant_item.dart';
 import '../search/search.dart';

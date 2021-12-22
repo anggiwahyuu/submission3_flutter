@@ -1,22 +1,24 @@
-import 'package:flutter/material.dart';
 import 'dart:async';
+
 import 'package:android_alarm_manager/android_alarm_manager.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:provider/provider.dart';
+import 'package:restaurant_app_2/ui/detail/detailpage.dart';
 import 'package:restaurant_app_2/ui/favorite/favorite_page.dart';
+import 'package:restaurant_app_2/ui/home/homepage.dart';
+import 'package:restaurant_app_2/ui/search/search.dart';
 import 'package:restaurant_app_2/ui/setting/setting_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import './helper/notify_helper.dart';
+
+import './api/bg_service.dart';
 import './helper/db_helper.dart';
+import './helper/notify_helper.dart';
 import './helper/preferences_helper.dart';
 import './provider/favorite_provider.dart';
 import './provider/preferences_provider.dart';
 import './provider/restaurant_provider.dart';
 import './provider/scheduling_provider.dart';
-import './api/bg_service.dart';
-import 'package:provider/provider.dart';
-import 'package:restaurant_app_2/ui/detail/detailpage.dart';
-import 'package:restaurant_app_2/ui/home/homepage.dart';
-import 'package:restaurant_app_2/ui/search/search.dart';
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();

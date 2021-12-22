@@ -1,4 +1,5 @@
 import 'package:sqflite/sqflite.dart';
+
 import '../model/restaurant_model.dart';
 
 class DatabaseHelper {

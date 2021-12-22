@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../helper/preferences_helper.dart';
 
 class PreferencesProvider extends ChangeNotifier {
