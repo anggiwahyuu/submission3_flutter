@@ -1,6 +1,7 @@
 import 'dart:async';
+import 'dart:io';
 
-import 'package:android_alarm_manager/android_alarm_manager.dart';
+import 'package:android_alarm_manager_plus/android_alarm_manager_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:provider/provider.dart';
@@ -28,7 +29,9 @@ Future<void> main() async {
   final NotificationHelper _notificationHelper = NotificationHelper();
   final BackgroundService _service = BackgroundService();
   _service.initializeIsolate();
-  await AndroidAlarmManager.initialize();
+  if (Platform.isAndroid) {
+    await AndroidAlarmManager.initialize();
+  }
   await _notificationHelper.initNotifications(flutterLocalNotificationsPlugin);
 
   runApp(const MyApp());

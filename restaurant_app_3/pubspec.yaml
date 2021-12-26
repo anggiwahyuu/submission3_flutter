@@ -36,13 +36,14 @@ dependencies:
   cupertino_icons: ^1.0.2
   http: ^0.13.4
   provider: ^6.0.1
-  shared_preferences: ^2.0.9
+  shared_preferences: ^2.0.11
   flutter_local_notifications: ^9.1.4
-  rxdart: ^0.27.3
+  rxdart: ^0.26.0
   sqflite: ^2.0.0+4
   intl: ^0.17.0
-  android_alarm_manager: ^2.0.0
+  android_alarm_manager_plus: ^2.0.3
   collection: ^1.15.0
+  path_provider: ^2.0.8
 
 dev_dependencies:
   flutter_test:
