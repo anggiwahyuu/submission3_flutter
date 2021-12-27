@@ -14,6 +14,7 @@ class SchedulingProvider extends ChangeNotifier {
     _isScheduled = value;
     if (_isScheduled) {
       print('Scheduling restaurant');
+      print(_isScheduled);
       notifyListeners();
       return await AndroidAlarmManager.periodic(
         const Duration(hours: 24),
@@ -25,6 +26,7 @@ class SchedulingProvider extends ChangeNotifier {
       );
     } else {
       print('Scheduling restaurant canceled');
+      print(_isScheduled);
       notifyListeners();
       return await AndroidAlarmManager.cancel(1);
     }

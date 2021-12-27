@@ -21,17 +21,18 @@ import './provider/preferences_provider.dart';
 import './provider/restaurant_provider.dart';
 import './provider/scheduling_provider.dart';
 
-final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
-    FlutterLocalNotificationsPlugin();
+final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
     
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final NotificationHelper _notificationHelper = NotificationHelper();
   final BackgroundService _service = BackgroundService();
+
   _service.initializeIsolate();
   if (Platform.isAndroid) {
     await AndroidAlarmManager.initialize();
   }
+  
   await _notificationHelper.initNotifications(flutterLocalNotificationsPlugin);
 
   runApp(const MyApp());

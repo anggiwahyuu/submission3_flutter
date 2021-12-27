@@ -174,7 +174,7 @@ class DetailItem extends StatelessWidget {
                                   color: Colors.green[50],
                                 ),
                                 child: const Text(
-                                  "RP xxxxxxx",
+                                  "Rp xxxxxxx",
                                   style: TextStyle(color: Colors.black),
                                 ),
                               ),
@@ -231,7 +231,7 @@ class DetailItem extends StatelessWidget {
                                   color: Colors.green[50],
                                 ),
                                 child: const Text(
-                                  "RP xxxxxxx",
+                                  "Rp xxxxxxx",
                                   style: TextStyle(color: Colors.black),
                                 ),
                               ),
